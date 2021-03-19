@@ -11,7 +11,9 @@ def find_median(arr):
     median = len(arr) // 2
     return arr[median]
 
-if __name__ == "__main__":
-    import doctest
-    if doctest.testmod().failed == 0:
-        print('\n✨ ALL TESTS PASSED!\n')
+print(find_median([5, 3, 1, 2, 4]))
+
+# if __name__ == "__main__":
+#     import doctest
+#     if doctest.testmod().failed == 0:
+#         print('\n✨ ALL TESTS PASSED!\n')
