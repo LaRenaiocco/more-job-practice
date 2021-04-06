@@ -49,15 +49,19 @@ def mango(quantity, price):
     >>> mango(9, 5)
     30
     """ 
+    # num_free = quantity // 3
+    # num_purchased = quantity - num_free
+    # return num_purchased * price
+    return (quantity - (quantity // 3)) * price
 
-# pseudocode:
-# input quantity of mangoes and price per mango
-# output is a dollar amount for the number of mangoes purchased
-# We can figure out the number of mangoes that will be bought/number free
-# by using floor division on quanity divided by 3
-# the result will be the number of free mangoes
-# subtract result from total quanity to get number that must be purchased
-# multiply number purchased by price per mango for return value
+    # pseudocode:
+    # input quantity of mangoes and price per mango
+    # output is a dollar amount for the number of mangoes purchased
+    # We can figure out the number of mangoes that will be bought/number free
+    # by using floor division on quanity divided by 3
+    # the result will be the number of free mangoes
+    # subtract result from total quanity to get number that must be purchased
+    # multiply number purchased by price per mango for return value
 
 
 if __name__ == "__main__":
