@@ -25,6 +25,11 @@ def pre_fizz(n):
         result.append(num)
 
     return result
+
+#  MORE CONCISE SOLUTION
+
+    # return list(range(1, n+1))
+
     # pseudocode:
     # input is a number equal or greater than 1.
     # output is a list of numbers from 1 to input number
@@ -32,6 +37,28 @@ def pre_fizz(n):
     # for item in range of 1  to number
     # append item to the list
     # return list
+
+# 8 kyu - price of mangoes
+# There's a "3 for 2" (or "2+1" if you like) offer on mangoes. For a given quantity 
+# and price (per mango), calculate the total cost of the mangoes.
+
+def mango(quantity, price):
+    """ 
+    >>> mango(3, 3)
+    6
+    >>> mango(9, 5)
+    30
+    """ 
+
+# pseudocode:
+# input quantity of mangoes and price per mango
+# output is a dollar amount for the number of mangoes purchased
+# We can figure out the number of mangoes that will be bought/number free
+# by using floor division on quanity divided by 3
+# the result will be the number of free mangoes
+# subtract result from total quanity to get number that must be purchased
+# multiply number purchased by price per mango for return value
+
 
 if __name__ == "__main__":
     import doctest
